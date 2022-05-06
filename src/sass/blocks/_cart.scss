@@ -1,0 +1,208 @@
+.cart {
+    padding: 0 35px;
+    position: absolute;
+    width: 400px;
+    height: 0px;
+    border-radius: 5px 0px 0px 5px;
+    box-shadow: rgba(80, 80, 97, .3) 0px 3px 12px;
+    overflow: auto;
+    top: 90px;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    transition: .3s ease-out all;
+    &::-webkit-scrollbar {
+        width: 4px;
+        background-color: #f9f9fd;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: #949494;
+    }
+    
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+        border-radius: 10px;
+        background-color: #f9f9fd;
+    }
+    &.visible {
+        padding: 30px 35px;
+        transition: .3s ease-in all;
+        height: 80vh;
+        .cart__close {
+            opacity: 1;
+            transition: .4s ease all;
+            transform: translateY(0%);
+        }
+    }
+    &.empty {
+        height: 210px;
+        transition: .3s ease all;
+        overflow: hidden;
+    }
+    &__close {
+        font-size: 38px;
+        position: absolute;
+        top: 0px;
+        left: 15px;
+        cursor: pointer;
+        opacity: 0;
+        transform: translateY(-100%);
+        transition: .4s ease all;
+    }
+    &__wrapper {
+        height: 410px;
+        overflow: auto;
+        &.hidden {
+            height: 0;
+        }
+        &::-webkit-scrollbar {
+            width: 6px;
+            background-color: #f9f9fd;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: $second-color;
+        }
+        
+        &::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+            border-radius: 10px;
+            background-color: #f9f9fd;
+        }
+    }
+    &__head {
+        font-size: 26px;
+        border-bottom: 1px solid #cfcfcf;
+    }
+    &__item {
+        margin-bottom: 10px;
+        padding: 30px 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    &__img {
+        max-width: 80px;
+        height: 100%;
+    }
+    &__descr {
+        padding-top: 5px;
+        padding-left: 25px;
+    }
+    &__title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 130%;
+        color: #000000;
+    }
+    &__details {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    &__price {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 150%;
+        color: #0C0D0C;
+        &-dollar {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 150%;
+            color: #0C0D0C;
+        }
+    }
+    .items {
+        margin-right: 25px;
+        width: 90px;
+        font-size: 20px;
+        height: 26px;
+        &__control {
+            width: 30px;
+        }
+        &__current {
+            width: 30px;
+        }
+    }
+    &__status {
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 85%;
+        background-color: #dddddd;
+        padding: 15px 25px;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 160%;
+        text-align: center;
+        color: #000000;
+        &.none {
+            display: none;
+        }
+    }
+    &__total-price {
+        margin-top: 20px;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 150%;
+        color: #0C0D0C;
+        &.none {
+            display: none;
+        }
+        .currency {
+            font-family: Josefin Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 150%;
+            color: #0C0D0C;
+        }
+    }
+    &__sum {
+        font-family: Josefin Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 150%;
+        color: #0C0D0C;
+    }
+    &__сheckout {
+        &-form {
+            padding-top: 15px;
+            margin-top: 15px;
+            width: 85%;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 160%;
+            color: #000000;
+            border-top: 1px solid #aaaaaa;
+            display: block;
+            &.none {
+                display: none;
+            }
+        }
+        &-input {
+            margin-top: 10px;
+            width: 100%;
+            padding: 10px 15px;
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid #aaaaaa;
+        }
+        &-btn {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 14px;
+            line-height: 150%;
+            &:hover {
+                background-color: #df402b;
+                color: #fff;
+            }
+        }
+    }
+}

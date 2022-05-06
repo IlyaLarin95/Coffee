@@ -1,0 +1,42 @@
+.contacts {
+    padding: 100px 0;
+    background: url("../img/bg2.png") no-repeat 0%/cover;
+    &__text {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 150%;
+        text-align: center;
+        color: $main-color;
+    }
+    &__divider {
+        margin: 0 auto;
+        margin-top: 25px;
+        width: 95px;
+        height: 2px;
+        background-color: $main-color;
+    }
+    &__title {
+        margin-top: 40px;
+        color: #FFFFFF;
+    }
+    &__mail {
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+        a {
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 150%;
+            text-align: center;
+            color: #FFFFFF;
+            transition: .3s ease;
+            &:hover {
+                transition: .3s ease;
+                color: $main-color;
+            }
+        }
+        img {
+            margin-right: 15px;
+        }
+    }
+}

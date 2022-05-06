@@ -1,0 +1,52 @@
+// Phone
+.phone {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    a {
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 150%;
+        text-align: center;
+        color: #FFFFFF;
+        transition: .3s ease;
+        &:hover {
+            transition: .3s ease;
+            color: $main-color;
+        }
+    }
+    img {
+        margin-right: 15px;
+    }
+}
+
+// Social
+
+.social {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    &-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        border: 1px solid #ffffff6b;
+        transition: .2s ease all;
+        &:hover {
+            transition: .2s ease all;
+            border: 1px solid $main-color;
+            svg {
+                transition: .3s ease all;
+                path {
+                    transition: .3s ease all;
+                    stroke: $main-color;
+                    // fill: $main-color;
+                }
+            }
+        }
+    }
+}

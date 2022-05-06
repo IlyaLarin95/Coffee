@@ -1,0 +1,118 @@
+.footer {
+    padding: 60px 0 50px 0;
+    background-color: #0D0402;
+    &__top {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 85px;
+    }
+    &__left {
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        &-logo {
+            img {
+                object-fit: cover;
+                max-width: 132px;
+                height: 100%;
+            }
+        }
+        &-text {
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 160%;
+            color: #FFFFFF;
+        }
+        &-phone {
+            margin-top: 0;
+            a {
+                display: flex;
+                align-items: center;
+                font-size: 18px;
+                font-weight: normal;
+            }
+            img {
+                max-height: 18px;
+                max-width: 18px;
+            }
+        }
+    }
+    &__middle {
+        margin-top: 17px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 130px;
+        &-item {
+            display: flex;
+            flex-direction: column;
+        }
+        &-header {
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 150%;
+            color: #FFFFFF;
+        }
+        &-menu {
+            margin-top: 24px;
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        &-link {
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 150%;
+            color: #FFFFFF;
+            transition: .3s ease all;
+            &:hover {
+                transition: .3s ease all;
+                color: $main-color;
+            }
+        }
+    }
+    &__right {
+        display: flex;
+        flex-direction: column;
+        margin-top: 17px;
+        &-header {
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 150%;
+            color: #FFFFFF;
+        }
+        &-social {
+            margin-top: 45px;
+        }
+        &-link {
+            width: 38px;
+            height: 38px;
+        }
+    }
+    &__bottom {
+        margin: 0 auto;
+        margin-top: 50px;
+        &-divider {
+            margin: 0 auto;
+            width: 100%;
+            height: 1px;
+            background-color: #ffffff6b;
+        }
+        &-copyright {
+            margin-top: 25px;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 160%;
+            text-align: center;
+            color: #FFFFFF;
+        }
+    }
+}

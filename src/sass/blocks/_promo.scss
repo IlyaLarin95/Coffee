@@ -1,0 +1,26 @@
+.promo {
+    height: 100vh;
+    padding: 210px 0 110px 0;
+    background: url("../img/coffee-beans.jpg") no-repeat 50%/cover;
+    &__content {
+        max-width: 524px;
+    }
+    &__title {
+        font-family: Josefin Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 120%;
+        color: #FFFFFF;
+    }
+    &__subtitle {
+        margin-top: 26px;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 160%;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    .btn {
+        margin-top: 48px;
+    }
+}

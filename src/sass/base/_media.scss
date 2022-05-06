@@ -1,0 +1,208 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .offer {
+        &__item {
+            align-items: center;
+            &-purchase {
+                justify-content: center;
+                gap: 40px;
+            }
+        }
+    }
+    .footer {
+        &__top {
+            gap: 60px;
+        }
+        &__left {
+            align-items: center;
+            &-text {
+                text-align: center;
+            }
+        }
+        &__right {
+            align-items: center;
+
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .header {
+        &__menu {
+            gap: 30px;
+        }
+    }
+    .offer {
+        padding: 80px 0;
+    }
+    .gallery {
+        padding-bottom: 80px;
+    }
+    .contacts {
+        padding: 80px 0;
+    }
+    .news {
+        padding: 80px 0;
+    }
+    .blog {
+        padding: 80px 0;
+    }
+    .footer {
+        &__top {
+            gap: 40px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 36px;
+    }
+    .container {
+        max-width: 540px;
+    }
+    body {
+        &.lock {
+            overflow: hidden;
+        }
+    }
+    .hamburger {
+        display: flex;
+    }
+    .cart {
+        top: 70px;
+        &__head {
+            &.title {
+                font-size: 26px;
+            }
+        }
+    }
+    .header {
+        padding: 10px 0;
+        &__logo {
+            flex: 1 1 auto;
+            justify-content: center;
+        }
+        &__cart {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 24px;
+        }
+        &__nav {
+            display: none;
+        }
+    }
+    .promo {
+        padding: 160px 0 80px 0;
+        &__title {
+            font-size: 54px;
+        }
+    }
+    .footer {
+        &__top {
+            gap: 20px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .offer {
+        padding: 40px 0;
+    }
+    .gallery {
+        padding-bottom: 40px;
+    }
+    .contacts {
+        padding: 40px 0;
+    }
+    .news {
+        padding: 40px 0;
+    }
+    .blog {
+        padding: 40px 0;
+    }
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+    .title {
+        font-size: 28px;
+    }
+    .subtitle {
+        font-size: 16px;
+    }
+    .btn_offer {
+        padding: 10px 20px;
+    }
+    .header {
+        &__menu {
+            margin: 0;
+            width: unset;
+        }
+    }
+    .cart {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 5%;
+        &.visible {
+            padding: 10% 5%;
+        }
+    }
+    .promo {
+        &__title {
+            font-size: 48px;
+        }
+        &__content {
+            min-height: 480px;
+        }
+        .btn {
+            margin: 48px auto 0 auto;
+        }
+    }
+    .offer {
+        &__item {
+            &-title {
+                font-size: 28px;
+            }
+        }
+        .container {
+            .arrows {
+                display: none;
+            }
+        }
+    }
+    .contacts {
+        &__phone {
+            a {
+                font-size: 18px;
+            }
+        }
+        &__mail {
+            a {
+                font-size: 18px;
+            }
+        }
+        &__social {
+            gap: 20px;
+        }
+    }
+    .footer {
+        &__middle {
+            gap: 90px;
+        }
+        &__right {
+            &-social {
+                margin-top: 25px;
+            }
+        }
+    }
+    .thanks {
+        padding: 25px 15px;
+    }
+}

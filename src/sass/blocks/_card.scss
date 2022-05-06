@@ -1,0 +1,87 @@
+.card {
+    max-width: 370px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    &__photo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__img {
+        height: 265px;
+        max-width: 100%;
+        // object-fit: cover;
+        align-self: center;
+    }
+    &__price-item {
+        margin-top: 35px;
+        font-family: Josefin Sans;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 150%;
+        color: #0C0D0C;
+    }
+    &__title {
+        margin-top: 10px;
+        font-family: Josefin Sans;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 130%;
+        color: #000000;
+    }
+    &__descr {
+        margin-top: 15px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 160%;
+        color: #666666;
+    }
+    &__purchase {
+        margin-top: 30px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+.items {
+    background: #f2ede7;
+    border-radius: 5px;
+    height: 47px;
+    width: 135px;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 130%;
+    color: #0C0D0C;
+    &__control {
+        height: 100%;
+        width: 45px;
+        cursor: pointer;
+        transition: 0.2s ease-in;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+            background: $main-color;
+            color: #FFF;
+        }
+    }
+    &__current {
+        height: 100%;
+        width: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

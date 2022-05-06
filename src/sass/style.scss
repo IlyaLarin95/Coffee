@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&family=Open+Sans:wght@400;600;700&family=Poppins&display=swap');
+
+@import 'base/variables';
+@import 'base/mixins';
+@import 'blocks/title';
+@import 'blocks/buttons';
+@import 'blocks/elements';
+@import 'blocks/hamburger';
+@import 'blocks/promo';
+@import 'blocks/offer';
+@import 'blocks/card';
+@import 'blocks/gallery';
+@import 'blocks/contacts';
+@import 'blocks/blog';
+@import 'blocks/header';
+@import 'blocks/footer';
+@import 'blocks/cart';
+@import 'blocks/modal';
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    &:focus {
+        outline: none;
+    }
+		
+}
+
+html, body {
+    height: 100%;
+}
+
+::after, ::before {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-height: 100%;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+
+@import 'base/media';   

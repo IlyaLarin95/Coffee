@@ -1,0 +1,88 @@
+.header {
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        display: flex;
+        align-items: flex-end;
+        gap: 10px;
+        img {
+            object-fit: cover;
+            max-width: 134px;
+            height: 100%;
+        }
+        span {
+            display: block;
+            font-family: Josefin Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 130%;
+            color: $main-color;
+        }
+    }
+    &__nav {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        flex: 1 1 auto;
+        justify-content: flex-end;
+        margin-right: 40px;
+    }
+    &__menu {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+    }
+    &__link {
+        text-align: center;
+        font-weight: normal;
+        font-size: 18px;
+        color: $third-color;
+        transition: .3s ease;
+        &:hover {
+            color: $main-color;
+            transition: .3s ease;
+        }
+    }
+    &__cart {
+        position: relative;
+        &__icon {
+            max-height: 46px;
+            width: 100%;
+        }
+        &-count {
+            position: absolute;
+            top: -5px;
+            right: -10px;
+            width: 20px;
+            height: 20px;
+            background-color: $main-color;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            color: #FFFFFF;
+        }
+        &-link {
+            position: relative;
+            transition: .3s ease all;
+            cursor: pointer;
+        }
+    }
+}

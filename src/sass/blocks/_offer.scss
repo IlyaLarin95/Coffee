@@ -1,0 +1,41 @@
+.offer {
+    padding: 140px 0;
+    &__title, &__subtitle {
+        text-align: left;
+    }
+    .container {
+        position: relative;
+        .arrows {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: flex;
+            width: 112px;
+            justify-content: space-between;
+            align-items: center;
+            .arrow__btn {
+                cursor: pointer;
+            }
+            .swiper-button-disabled {
+                cursor: default;
+                opacity: .6;
+                transition: .3s ease all
+            }
+        }
+    }
+}
+
+
+.swiper {
+    width: 100%;
+    min-height: 542px;
+    margin: 0;
+    &:after {
+        content: '';
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 20px;
+        background-color: green;
+    }
+}
